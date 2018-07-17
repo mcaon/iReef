@@ -1,0 +1,11 @@
+version: '2'
+services:
+    ireef-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/iReef/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=iReef
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
